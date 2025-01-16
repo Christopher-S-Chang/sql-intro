@@ -1,3 +1,6 @@
+.mode columns
+.hearders on
+
 -- What teams in history have won more than 100 games in a single
 -- season, chronologically?
 
@@ -15,4 +18,7 @@
 -- | 2019 | New York Yankees       | 103  |
 -- +------+------------------------+------+
 
-
+SELECT year, name, wins
+FROM teams
+where wins > 100
+Order by year;

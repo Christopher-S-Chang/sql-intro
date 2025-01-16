@@ -11,4 +11,4 @@
 
 select year, name
 FROM teams
-where park = "Chicago White Sox";
+where park = "Guaranteed Rate Field";

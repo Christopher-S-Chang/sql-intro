@@ -24,4 +24,13 @@
 -- | Billy      | Hamilton  |
 -- | Ian        | Happ      |
 
+.mode columns
+.headers ON
 
+select p.first_name as 'First', p.last_name as "Last"
+FROM stats s  
+    INNER JOIN players p ON s.player_id = p.id
+    INNER JOIN teams t ON t.id = s.team_id
+where t.year = 2020
+AND t.name = "Chicago Cubs"
+;
